@@ -1,31 +1,31 @@
 ﻿using System;
 using System.Net;
 using System.Net.Sockets;
+using System.Runtime.Serialization;
 using System.Text;
-using System.Threading.Tasks;
+using Vettel.Byte;
 
 namespace Vettel.Client
 {
-    public class Client : IClient
+    public class Client<T> : IClient<T> where T : ISerializable
     {
         private readonly UdpClient _listener;
+        private readonly Binary<T> _binary;
         
         public Client(int port)
         {
             _listener = new UdpClient(port);
+            _binary = new Binary<T>();
         }
 
-        public void Listen(Action<string> callback)
+        public void Listen(Action<T> callback)
         {
             IPEndPoint endPoint = new IPEndPoint(IPAddress.Any, 0);
 
             while (true)
             {
                 byte[] bytes = _listener.Receive(ref endPoint);
-                string message = Encoding.UTF8.GetString(bytes);
-
-                if (IsCloseMessage(message))
-                    break;
+                T message = _binary.Deserialize(bytes);
 
                 callback(message);
             }

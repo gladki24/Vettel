@@ -6,10 +6,17 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vettel.Server", "Vettel.Server\Vettel.Server.csproj", "{32F17A65-EC8D-4566-983D-D48BE67C7AC8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vettel.Client", "Vettel.Client\Vettel.Client.csproj", "{A8267691-9643-4EA8-84A6-F673281E49AF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CE39EC6E-0602-47DD-8E84-4A033191CC15} = {CE39EC6E-0602-47DD-8E84-4A033191CC15}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vettel.View", "Vettel.View\Vettel.View.csproj", "{00AD2A38-C4CE-4129-8282-3BBF6BB1DAA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vettel.View", "Vettel.View\Vettel.View.csproj", "{00AD2A38-C4CE-4129-8282-3BBF6BB1DAA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vettel.Controller", "Vettel.Controller\Vettel.Controller.csproj", "{3709FA32-5970-40A8-8484-A5136F6E90BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vettel.Controller", "Vettel.Controller\Vettel.Controller.csproj", "{3709FA32-5970-40A8-8484-A5136F6E90BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vettel.Byte", "Vettel.Byte\Vettel.Byte.csproj", "{CE39EC6E-0602-47DD-8E84-4A033191CC15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vettel.Model", "Vettel.Model\Vettel.Model.csproj", "{AF87F717-D56F-480C-905B-DBF29F81436D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +40,14 @@ Global
 		{3709FA32-5970-40A8-8484-A5136F6E90BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3709FA32-5970-40A8-8484-A5136F6E90BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3709FA32-5970-40A8-8484-A5136F6E90BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE39EC6E-0602-47DD-8E84-4A033191CC15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE39EC6E-0602-47DD-8E84-4A033191CC15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE39EC6E-0602-47DD-8E84-4A033191CC15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE39EC6E-0602-47DD-8E84-4A033191CC15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF87F717-D56F-480C-905B-DBF29F81436D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF87F717-D56F-480C-905B-DBF29F81436D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF87F717-D56F-480C-905B-DBF29F81436D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF87F717-D56F-480C-905B-DBF29F81436D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

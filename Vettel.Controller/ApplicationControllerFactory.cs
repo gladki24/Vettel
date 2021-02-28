@@ -2,16 +2,16 @@
 
 namespace Vettel.Controller
 {
-    internal class ApplicationModeFactory : IApplicationModeFactory
+    internal class ApplicationControllerFactory : IApplicationControllerFactory
     {
-        public IApplicationMode Create(ApplicationModeView input)
+        public IApplicationController Create(ApplicationModeView input)
         {
             switch (input)
             {
                 case ApplicationModeView.Client:
-                    return new ClientMode();
+                    return new ClientController();
                 case ApplicationModeView.Server:
-                    return new ServerMode();
+                    return new ServerController();
                 default:
                     throw new InvalidApplicationModeException();
             }

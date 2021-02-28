@@ -1,14 +1,15 @@
 ﻿using System.Net;
+using Vettel.Model;
 using Vettel.Server;
 
 namespace Vettel.Controller
 {
-    internal class ServerMode : IApplicationMode
+    internal class ServerController : IApplicationController
     {
         private readonly View.View _view;
-        private IServer _server;
+        private IServer<User> _server;
 
-        public ServerMode()
+        public ServerController()
         {
             _view = new View.View();
         }
@@ -18,14 +19,20 @@ namespace Vettel.Controller
             IPAddress ip = _view.ReadInputIpAddress();
             int port = _view.ReadInputPortNumber();
 
-            _server = new Server.Server(ip, port);
+            _server = new Server.Server<User>(ip, port);
 
             string message;
 
             do
             {
                 message = _view.ReadMessage();
-                _server.Send(message);
+
+                User user = new User();
+
+                user.Name = message;
+                user.Surname = "Vettel";
+
+                _server.Send(user);
 
             } while (!IsExitInput(message));
         }

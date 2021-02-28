@@ -1,13 +1,14 @@
 ﻿using System;
+using Vettel.Model;
 
 namespace Vettel.Controller
 {
-    internal class ClientMode : IApplicationMode
+    internal class ClientController : IApplicationController
     {
         private readonly View.View _view;
-        private Client.IClient _client;
+        private Client.IClient<User> _client;
 
-        public ClientMode()
+        public ClientController()
         {
             _view = new View.View();
         }
@@ -16,8 +17,8 @@ namespace Vettel.Controller
         {
             int port = _view.ReadInputPortNumber();
 
-            _client = new Client.Client(port);
-            _client.Listen(message => _view.PrintMessage(message));
+            _client = new Client.Client<User>(port);
+            _client.Listen(message => _view.PrintMessage(message.ToString()));
             Console.ReadKey();
         }
     }

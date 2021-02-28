@@ -1,6 +1,6 @@
 ﻿namespace Vettel.Controller
 {
-    internal interface IApplicationMode
+    internal interface IApplicationController
     {
         void Run();
     }
