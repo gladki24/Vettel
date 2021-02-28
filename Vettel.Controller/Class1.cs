@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Vettel.Client
+namespace Vettel.Controller
 {
     public class Class1
     {

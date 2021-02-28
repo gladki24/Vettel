@@ -1,11 +1,10 @@
-﻿using System;
-using System.Net;
+﻿using System.Net;
 using System.Net.Sockets;
 using System.Text;
 
 namespace Vettel.Server
 {
-    public class Server
+    public class Server : IServer
     {
         private IPEndPoint endPoint { get; }
         private Socket socket { get; }

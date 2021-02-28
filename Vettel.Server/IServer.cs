@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Vettel.Server
+﻿namespace Vettel.Server
 {
-    interface IServer
+    public interface IServer
     {
+        void Send(string message);
     }
 }

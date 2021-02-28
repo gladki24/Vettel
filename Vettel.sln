@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vettel.Model", "Vettel\Vettel.Model.csproj", "{93980C07-3A98-49D5-B60C-059652E3F74E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vettel.Server", "Vettel.Server\Vettel.Server.csproj", "{32F17A65-EC8D-4566-983D-D48BE67C7AC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vettel.Server", "Vettel.Server\Vettel.Server.csproj", "{32F17A65-EC8D-4566-983D-D48BE67C7AC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vettel.Client", "Vettel.Client\Vettel.Client.csproj", "{A8267691-9643-4EA8-84A6-F673281E49AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vettel.Client", "Vettel.Client\Vettel.Client.csproj", "{A8267691-9643-4EA8-84A6-F673281E49AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vettel.View", "Vettel.View\Vettel.View.csproj", "{45B1ED56-E845-4ED2-8B9E-26C4FA49214F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vettel.Controller", "Vettel.Controller\Vettel.Controller.csproj", "{7D06B67B-7D76-495D-AA26-CC1625A43204}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vettel.Controller", "Vettel.Controller\Vettel.Controller.csproj", "{9907CEF2-65E2-4FCF-A78D-B9E84AE27BB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{93980C07-3A98-49D5-B60C-059652E3F74E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{93980C07-3A98-49D5-B60C-059652E3F74E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{93980C07-3A98-49D5-B60C-059652E3F74E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{93980C07-3A98-49D5-B60C-059652E3F74E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{32F17A65-EC8D-4566-983D-D48BE67C7AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{32F17A65-EC8D-4566-983D-D48BE67C7AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32F17A65-EC8D-4566-983D-D48BE67C7AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -29,10 +25,14 @@ Global
 		{A8267691-9643-4EA8-84A6-F673281E49AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8267691-9643-4EA8-84A6-F673281E49AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8267691-9643-4EA8-84A6-F673281E49AF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7D06B67B-7D76-495D-AA26-CC1625A43204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D06B67B-7D76-495D-AA26-CC1625A43204}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D06B67B-7D76-495D-AA26-CC1625A43204}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D06B67B-7D76-495D-AA26-CC1625A43204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45B1ED56-E845-4ED2-8B9E-26C4FA49214F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B1ED56-E845-4ED2-8B9E-26C4FA49214F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B1ED56-E845-4ED2-8B9E-26C4FA49214F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B1ED56-E845-4ED2-8B9E-26C4FA49214F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9907CEF2-65E2-4FCF-A78D-B9E84AE27BB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9907CEF2-65E2-4FCF-A78D-B9E84AE27BB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9907CEF2-65E2-4FCF-A78D-B9E84AE27BB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9907CEF2-65E2-4FCF-A78D-B9E84AE27BB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
