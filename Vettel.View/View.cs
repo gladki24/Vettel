@@ -94,7 +94,6 @@ namespace Vettel.View
         {
             string formatted = _resource.Get("Message");
             formatted += message;
-
             _printer.Print(formatted);
         }
 

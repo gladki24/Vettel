@@ -1,24 +1,28 @@
-﻿using System.Net;
+﻿using System.IO;
+using System.Net;
 using System.Net.Sockets;
-using System.Text;
+using System.Runtime.Serialization;
+using Vettel.Byte;
 
 namespace Vettel.Server
 {
-    public class Server : IServer
+    public class Server<TMessage> : IServer<TMessage> where TMessage : ISerializable
     {
-        private IPEndPoint endPoint { get; }
-        private Socket socket { get; }
+        private readonly IPEndPoint _endPoint;
+        private readonly Socket _socket;
+        private readonly IBinary<TMessage> _binary;
 
         public Server(IPAddress ipAddress, int port)
         {
-            endPoint = new IPEndPoint(ipAddress, port);
-            socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+            _endPoint = new IPEndPoint(ipAddress, port);
+            _socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+            _binary = new Binary<TMessage>();
         }
 
-        public void Send(string message)
+        public void Send(TMessage message)
         {
-            byte[] buffer = Encoding.ASCII.GetBytes(message);
-            socket.SendTo(buffer, endPoint);
+            byte[] buffer = _binary.Serialize(message);
+            _socket.SendTo(buffer, _endPoint);
         }
     }
 }

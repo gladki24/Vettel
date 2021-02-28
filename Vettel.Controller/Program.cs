@@ -18,10 +18,10 @@ namespace Vettel.Controller
             if (applicationModeView == ApplicationModeView.Server)
                 view.PrintInformationAboutServerMode();
 
-            IApplicationModeFactory applicationModeFactory = new ApplicationModeFactory();
-            IApplicationMode applicationMode = applicationModeFactory.Create(applicationModeView);
+            IApplicationControllerFactory applicationControllerFactory = new ApplicationControllerFactory();
+            IApplicationController applicationController = applicationControllerFactory.Create(applicationModeView);
 
-            applicationMode.Run();
+            applicationController.Run();
         }
     }
 }
