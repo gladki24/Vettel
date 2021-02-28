@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vettel.Server", "Vettel.Ser
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vettel.Client", "Vettel.Client\Vettel.Client.csproj", "{A8267691-9643-4EA8-84A6-F673281E49AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vettel.View", "Vettel.View\Vettel.View.csproj", "{45B1ED56-E845-4ED2-8B9E-26C4FA49214F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vettel.View", "Vettel.View\Vettel.View.csproj", "{00AD2A38-C4CE-4129-8282-3BBF6BB1DAA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vettel.Controller", "Vettel.Controller\Vettel.Controller.csproj", "{9907CEF2-65E2-4FCF-A78D-B9E84AE27BB6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vettel.Controller", "Vettel.Controller\Vettel.Controller.csproj", "{3709FA32-5970-40A8-8484-A5136F6E90BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{A8267691-9643-4EA8-84A6-F673281E49AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8267691-9643-4EA8-84A6-F673281E49AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8267691-9643-4EA8-84A6-F673281E49AF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{45B1ED56-E845-4ED2-8B9E-26C4FA49214F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45B1ED56-E845-4ED2-8B9E-26C4FA49214F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45B1ED56-E845-4ED2-8B9E-26C4FA49214F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45B1ED56-E845-4ED2-8B9E-26C4FA49214F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9907CEF2-65E2-4FCF-A78D-B9E84AE27BB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9907CEF2-65E2-4FCF-A78D-B9E84AE27BB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9907CEF2-65E2-4FCF-A78D-B9E84AE27BB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9907CEF2-65E2-4FCF-A78D-B9E84AE27BB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00AD2A38-C4CE-4129-8282-3BBF6BB1DAA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00AD2A38-C4CE-4129-8282-3BBF6BB1DAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00AD2A38-C4CE-4129-8282-3BBF6BB1DAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00AD2A38-C4CE-4129-8282-3BBF6BB1DAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3709FA32-5970-40A8-8484-A5136F6E90BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3709FA32-5970-40A8-8484-A5136F6E90BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3709FA32-5970-40A8-8484-A5136F6E90BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3709FA32-5970-40A8-8484-A5136F6E90BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

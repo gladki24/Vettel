@@ -1,9 +1,9 @@
-﻿using System.Threading.Tasks;
+﻿using System;
 
 namespace Vettel.Client
 {
     public interface IClient
     {
-        string Listen();
+        void Listen(Action<string> callback);
     }
 }
